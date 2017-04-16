@@ -13,7 +13,7 @@ public class PalindromeDetector {
 
         int length = localString.length();
         boolean isEven = length % 2 == 0;
-        int startIndex = isEven ? length / 2 : (int) Math.ceil(length / 2) + 1;
+        int startIndex = isEven ? length / 2 : (int) Math.ceil(length / 2.0);
 
         String tail = localString.substring(startIndex);
         String reversed = new StringBuffer(tail).reverse().toString();
